@@ -38,11 +38,11 @@ public class MainActivity extends AppCompatActivity {
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                int qtd = (seekBar.getProgress()+5)/4;
+                float qtd = (float)Math.pow((seekBar.getProgress()*19.0)/100.0 + 1.0, 1.768621786841);
 
-                String str = "Espessura: "+qtd;
+                String str = "Espessura: "+((int)qtd);
                 txtEspessura.setText(str);
-                canvasView.setEspessura(qtd);
+                canvasView.setEspessura((int)qtd);
             }
 
             @Override

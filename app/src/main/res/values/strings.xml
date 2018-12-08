@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Canvas Art</string>
+    <string name="app_name">DesenhArte</string>
     <string name="desfazer">desfazer</string>
     <string name="refazer">refazer</string>
     <string name="espessura_1">Espessura: 1</string>

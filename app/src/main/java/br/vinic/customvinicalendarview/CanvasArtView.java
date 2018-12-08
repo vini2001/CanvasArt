@@ -19,7 +19,7 @@ public class CanvasArtView extends View {
     private ArrayList<CustomPath> paths = new ArrayList<>();
     private ArrayList<CustomPath> undones = new ArrayList<>();
     private int widthAtual;
-    private String corAtual;
+    private String corAtual = "#008577";
 
     public CanvasArtView(Context context) {
         super(context);
